@@ -11,6 +11,5 @@ public class ImageHelper {
     public static void saveBufferedImageToFile(BufferedImage bufferedImage) throws IOException {
         File outputFile = new File("src/test/resources/generated_barcodes/" + LocalDateTime.now() + "_sample.png");
         ImageIO.write(bufferedImage, "png", outputFile);
-
     }
 }

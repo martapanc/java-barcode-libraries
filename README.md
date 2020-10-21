@@ -2,7 +2,7 @@
 
 ## Libraries
 - Barcode4j: http://barcode4j.sourceforge.net/
-- Barbeque: http://barbecue.sourceforge.net/
+- Barbecue: http://barbecue.sourceforge.net/
 - Zxing: https://github.com/zxing/zxing
 
 ### Resources
