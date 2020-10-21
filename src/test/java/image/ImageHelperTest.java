@@ -3,6 +3,7 @@ package image;
 import barbecue.BarbecueHelper;
 import barcode4j.Barcode4jHelper;
 import junit.framework.TestCase;
+import zxing.ZxingHelper;
 
 public class ImageHelperTest extends TestCase {
 
@@ -12,10 +13,12 @@ public class ImageHelperTest extends TestCase {
     public void testSaveBufferedImageToFile_Code39() throws Exception {
         ImageHelper.saveBufferedImageToFile(Barcode4jHelper.generateCode39BarcodeImage(FISCAL_CODE_EXAMPLE));
         ImageHelper.saveBufferedImageToFile(BarbecueHelper.generateCode39BarcodeImage(FISCAL_CODE_EXAMPLE));
+        ImageHelper.saveBufferedImageToFile(ZxingHelper.generateCode39BarcodeImage(FISCAL_CODE_EXAMPLE));
     }
 
     public void testSaveBufferedImageToFile_EAN13() throws Exception {
         ImageHelper.saveBufferedImageToFile(Barcode4jHelper.generateEAN13BarcodeImage(EAN13_EXAMPLE));
 //        ImageHelper.saveBufferedImageToFile(BarbecueHelper.generateEAN13BarcodeImage(EAN13_EXAMPLE));
+        ImageHelper.saveBufferedImageToFile(ZxingHelper.generateEAN13BarcodeImage(EAN13_EXAMPLE));
     }
 }
